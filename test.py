@@ -3,7 +3,7 @@ import re
 
 filename = 'participants.csv'
 try:
-    with open(filename, 'rb') as fh:
+    with open(filename, 'r') as fh:
         reader = csv.reader(fh, delimiter=',')
         for row in reader:
             if len(row) != 2:
